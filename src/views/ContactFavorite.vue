@@ -5,7 +5,7 @@
         </div>
         <div class="mt-3 col-md-6">
             <h4>
-                Danh bạ
+                Liên hệ Yêu thích
                 <i class="fas fa-address-book"></i>
             </h4>
             <ContactList v-if="filteredContactsCount > 0" :contacts="filteredContacts" v-model:activeIndex="activeIndex" />
@@ -20,9 +20,6 @@
                 </button>
                 <button class="btn btn-sm btn-danger" @click="removeAllContacts">
                     <i class="fas fa-trash"></i> Xóa tất cả
-                </button>
-                <button class="btn btn-sm btn-info" @click="favoriteContacts">
-                    <i class="fa-solid fa-star"></i> Yêu thích
                 </button>
             </div>
         </div>
@@ -95,7 +92,7 @@ export default {
     methods: {
         async retrieveContacts() {
             try {
-                this.contacts = await ContactService.getAll();
+                this.contacts = await ContactService.findAllFavorite();
             } catch (error) {
                 console.log(error);
             }
@@ -116,9 +113,6 @@ export default {
         },
         goToAddContact() {
             this.$router.push({ name: "contact.add" });
-        },
-        favoriteContacts() {
-            this.$router.push({ name: "favorite" }); 
         },
     },
     mounted() {
