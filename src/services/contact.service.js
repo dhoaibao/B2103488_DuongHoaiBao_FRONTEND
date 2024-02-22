@@ -1,6 +1,6 @@
 import createApiClient from "./api.service";
 class ContactService {
-    constructor(baseUrl = "/api/contacts") {
+    constructor(baseUrl = "https://b2103488-duong-hoai-bao-backend.vercel.app/api/contacts") {
         this.api = createApiClient(baseUrl);
     }
     async getAll() {
