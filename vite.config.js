@@ -22,4 +22,9 @@ export default defineConfig({
       },
       }
     },
+    pwa: {
+      workboxOptions: {
+        exclude: [/_redirects/]
+      }
+    }
 })
