@@ -14,12 +14,12 @@ export default defineConfig({
   },
   server: {
     port: 3001,
-    proxy: {
-      "/api": {
-      // target: "http://localhost:3000/",
-      target: "https://b2103488-duonghoaibao-backend.onrender.com/",
-      changeOrigin: true,
-      },
-      }
-    },
+    // proxy: {
+    //   "/api": {
+    //   // target: "http://localhost:3000/",
+    //   target: "https://b2103488-duonghoaibao-backend.onrender.com/",
+    //   changeOrigin: true,
+    //   },
+    //   }
+    // },
 })
