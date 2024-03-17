@@ -15,9 +15,5 @@ export default {
   </div>
 </template>
 <style>
-.page {
-  max-width: 400px;
-  margin: auto;
-}
+
 </style>
-//Hell
