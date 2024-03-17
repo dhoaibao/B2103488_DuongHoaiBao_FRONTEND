@@ -1,4 +1,4 @@
-# Backend: 
+# Backend
 [https://github.com/dhoaibao/B2103488_DuongHoaiBao_BACKEND](https://github.com/dhoaibao/B2103488_DuongHoaiBao_BACKEND)
 
 # Frontend
